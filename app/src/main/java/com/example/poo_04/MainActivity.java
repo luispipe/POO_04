@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         //Siempre que este la palabra new es indicio que se crea un objeto
         Circulo circuloAzul= new Circulo("azul",2);
         Circulo circuloRojo= new Circulo("rojo",1000);
+
+
+
 
 
     }

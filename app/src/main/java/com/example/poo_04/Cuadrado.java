@@ -1,44 +1,30 @@
 package com.example.poo_04;
 
-public class Cuadrado {
+public class Cuadrado extends Figura{
     //Atributos
-    String color;
-    double lado;
+   double lado;
 
     //Metodo constructor
 
+
     public Cuadrado(String color, double lado) {
-        this.color = color;
+        super(color);
         this.lado = lado;
     }
 
+    //Metodos
+
+    @Override
     public double area(){
         return this.lado*this.lado;
     }
-
+    @Override
     public double perimetro(){
         return this.lado*4;
     }
-
+    @Override
     public void pintar(){
-        System.out.println("Se pinto el cuadrado de color:"+this.color);
+        System.out.println("El cuadrado se pinto de color:"+this.color);
     }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getLado() {
-        return lado;
-    }
-
-    public void setLado(double lado) {
-        this.lado = lado;
-    }
-
 
 }
